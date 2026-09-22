@@ -95,7 +95,7 @@
       }
       .wrap {
         max-width: 1080px;
-        margin: 0 auto;
+        margin: 0px auto 30px ;
         padding: 0 28px;
         position: relative;
       }
@@ -132,6 +132,7 @@
         background: var(--glow-a);
         animation-delay: -12s;
       }
+  
       @keyframes drift {
         0%,
         100% {
@@ -261,6 +262,9 @@
         gap: 14px;
         flex-wrap: wrap;
       }
+      #stack{
+        padding-top:"10px"
+      }
       .btn {
         font-family: "Inter", sans-serif;
         font-size: 14.5px;
@@ -382,6 +386,8 @@
       .reveal {
         opacity: 0;
         transform: translateY(28px);
+        padding-top:20px;
+         padding-bottom:20px;
         transition:
           opacity 0.7s ease,
           transform 0.7s ease;
@@ -412,7 +418,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-bottom: 36px;
+        margin-bottom: 20px;
         gap: 16px;
         flex-wrap: wrap;
       }
@@ -741,7 +747,7 @@
           <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
 
-        <div class="wave-box">
+        <!-- <div class="wave-box">
           <svg class="wave" viewBox="0 0 480 160" preserveAspectRatio="none" aria-hidden="true">
             <path
               class="wave-path"
@@ -751,7 +757,7 @@
             />
           </svg>
           <p class="cap mono"><span>lead II · live</span><span>72 bpm</span></p>
-        </div>
+        </div> -->
 
         <div class="stats">
           <div class="stat">
@@ -760,7 +766,7 @@
           </div>
           <div class="stat">
             <div class="num">6</div>
-            <div class="label">production features across billing, charting &amp; labs</div>
+            <div class="label">production features across task management, reports &amp; labs</div>
           </div>
           <div class="stat">
             <div class="num">3</div>
@@ -853,8 +859,7 @@
                   <span class="project-tag">Next.js · SWR</span>
                 </div>
                 <p class="project-blurb">
-                  A front-desk workflow tool — live schedule, patient search, vitals trends, and a multi-step intake
-                  wizard.
+                A front-desk tool for the parts of a clinic day that move fast — checking patients in, tracking who's waiting, and getting a new patient into the system without a ten-field form dumped on one screen.
                 </p>
               </div>
               <span class="expand-icon">+</span>
@@ -865,8 +870,8 @@
                 ><span>Tailwind CSS</span>
               </div>
               <div class="project-links">
-                <a href="#" aria-label="View Clinic Ops Dashboard live demo">Live demo ↗</a
-                ><a href="#" aria-label="View Clinic Ops Dashboard source code">Source ↗</a>
+                <a href="https://patient-dashboard-app.vercel.app/" target="_blank" aria-label="View Clinic Ops Dashboard live demo">Live demo ↗</a
+                ><a href="https://github.com/morayodev/Patient-Dashboard" target="_blank" aria-label="View Clinic Ops Dashboard source code">Source ↗</a>
               </div>
               <dl class="project-notes">
                 <div class="note">
@@ -883,13 +888,13 @@
                     generic <code>useFormWizard</code> hook powers a 4-step intake form, reusable beyond this one form.
                   </dd>
                 </div>
-                <div class="note">
+                <!-- <div class="note">
                   <dt>Detail worth asking about</dt>
                   <dd>
                     Each appointment status exposes exactly one obvious next action, instead of a generic status
                     dropdown — mirrors how staff actually move a patient through a visit.
                   </dd>
-                </div>
+                </div> -->
               </dl>
             </div>
           </details>
@@ -902,8 +907,7 @@
                   <span class="project-tag">SWR · polling</span>
                 </div>
                 <p class="project-blurb">
-                  A live order tracker where results progress through a lab pipeline, with optimistic review actions and
-                  graceful failure handling.
+              Lab results update live as they move through the pipeline — reviewing one feels instant, and the UI never lies about what the server actually confirmed.
                 </p>
               </div>
               <span class="expand-icon">+</span>
@@ -914,7 +918,7 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://lab-results-tracker.vercel.app"
+                  href="https://lab-results-tracker-ten.vercel.app/" 
                   target="_blank"
                   rel="noopener"
                   aria-label="View Lab Results Tracker live demo"
@@ -943,17 +947,17 @@
                     request.
                   </dd>
                 </div>
-                <div class="note">
+                <!-- <div class="note">
                   <dt>Detail worth asking about</dt>
                   <dd>
                     The mock API deliberately fails ~4% of the time, so the error and retry paths are real code, not
                     untested theory.
                   </dd>
-                </div>
+                </div> -->
               </dl>
             </div>
           </details>
-
+<!-- 
           <details class="project-card">
             <summary>
               <div>
@@ -1001,7 +1005,7 @@
                 </div>
               </dl>
             </div>
-          </details>
+          </details> -->
         </div>
       </section>
 
@@ -1015,7 +1019,7 @@
             </p>
           </div>
           <div class="contact-links mono">
-            <a href="mailto:hello@yourdomain.com">Email <span class="arrow">hello@yourdomain.com</span></a>
+            <a href="mailto:morayoadelekan41@gmail.com">Email <span class="arrow">morayoadelekan41@gmail.com</span></a>
             <a href="https://github.com/morayodev" target="_blank" rel="noopener"
               >GitHub <span class="arrow">github.com/morayodev</span></a
             >
