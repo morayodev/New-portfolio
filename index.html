@@ -798,47 +798,55 @@
           <div class="work-role-meta">
             <h3>Frontend Engineer</h3>
             <p>
-              Healthcare platform spanning billing, clinical charting, lab workflows, and patient checkout, built in a
-              shared monorepo with a custom component library.
+     Healthcare EHR platform spanning laboratory and radiology workflows, dynamic reporting, patient billing, clinical charting, task management, and patient checkout, built within a shared monorepo using a custom component library.
             </p>
           </div>
           <div class="work-groups">
             <div class="work-group">
-              <p class="work-group-title">Billing &amp; checkout</p>
+              <p class="work-group-title">Task Management</p>
               <ul>
                 <li>
-                  Built a multi-step billing workflow across four connected forms, with cross-tab validation and
-                  navigation sequencing between next-of-kin and special billing steps.
+                  <!-- Built a multi-step billing workflow across four connected forms, with cross-tab validation and
+                  navigation sequencing between next-of-kin and special billing steps. -->
+
+                  Built an internal task-management experience for the clinical team, with list and board views so users can review and manage tasks in different ways.
                 </li>
                 <li>
-                  Built the patient checkout page and its SWR data layer — typed hooks for patient search, detail
-                  lookups, and mutations.
+        Worked on task creation and management flows covering details such as beneficiary, dates, initiator, assignee, status, priority, and description.
+
                 </li>
+                <li>Polling-based notifications: Keeping task activity updates available to team members.</li>
+                <li>Mobile-friendly filtering: Helping users manage and filter tasks on smaller screens.</li>
               </ul>
             </div>
             <div class="work-group">
-              <p class="work-group-title">Clinical charting &amp; data</p>
+              <p class="work-group-title">Laboratory, Radiology & Billing Work</p>
               <ul>
                 <li>
-                  Built a pediatric growth-chart component rendering WHO/CDC percentile curves, with custom
-                  collision-avoidance logic so overlapping percentile labels stay legible.
+              Lab Orders & Lab Items: Built interfaces for creating and managing lab orders and lab items within the EHR.
                 </li>
                 <li>
-                  Built a vitals entry form with timezone-safe date handling and a searchable pain-location field.
-                </li>
+Laboratory & Radiology Results: Worked on modules for viewing and managing laboratory and radiology results.                </li>
+<li>Patient Billing & Payment Information: Implemented billing workflows supporting patients, clients, and third parties, including guarantor, next-of-kin, insurance, and special billing details.
+</li>
+<li>Document Printing & Downloads: Implemented functionality to print and download supported documents in multiple file formats.</li>
               </ul>
             </div>
             <div class="work-group">
-              <p class="work-group-title">Lab orders &amp; internal tools</p>
+              <p class="work-group-title">Dynamic Reporting System</p>
               <ul>
-                <li>
+                <li>Dynamic Data Rendering: Developed reports that display data dynamically based on the available data and report configuration.</li>
+                <li>Grouped Reports: Organized report data into logical groups for easier navigation and interpretation.</li>
+                <li>Filtering: Implemented filtering functionality to help users narrow down report data and find relevant information.</li>
+                <li>Printing & Downloads: Enabled users to print reports and download them in multiple supported file formats, such as exel, pdf and csv</li>
+                <!-- <li>
                   Built a PDF printing system for lab orders using a hidden-iframe print flow, with SWR cache handling
                   to support reprinting the same order cleanly.
                 </li>
                 <li>
                   Built a task management module — list, board, and mobile filtering views — used by the internal
                   clinical team.
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
